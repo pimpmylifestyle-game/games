@@ -1,0 +1,53 @@
+<div class="contact-box">
+  <span class="close-btn" onclick="closeContact()"> <i class="fa fa-times"></i> </span>
+  <h2>Get connected with pimpmylife.com</h2>
+  <hr>
+  <script type="text/javascript">var submitted=false;</script>
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+  onload="if(submitted) {window.location='thankyou.htm';}"></iframe>
+  <form action="https://docs.google.com/forms/d/e/1FAIpQLScJR8035usMXm56Ii7Lk-npuF6L9vlCmnqtWoFjpbBlEnWolQ/formResponse"  method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+
+    <fieldset>
+      <label for="name">What do you want to be called?</label>
+      <input type="text" class="name-form" name="entry.549706356" required autofocus>
+    </fieldset>
+
+    <fieldset>
+      <label for="name">How do you want to be reached?</label>
+      <div class="mobile-option options">
+        <h3 onclick="mobileSelect('.mobile-input-box')">
+          Mobile Contact Number
+          <i class="fa fa-plus"></i>
+          <i class="fa fa-minus"></i>
+        </h3>
+        <span class="mobile-input-box select-input-box">
+          <input class="elegant-input" type="text" placeholder="Please enter your contact number" name="entry.1701992289">
+        </span>
+      </div>
+
+      <div class="email-option options">
+        <h3 onclick="emailSelect('.email-input-box')">
+          Email
+          <i class="fa fa-plus"></i>
+          <i class="fa fa-minus"></i>
+        </h3>
+        <span class="email-input-box select-input-box">
+          <input class="elegant-input" type="email" placeholder="Please enter your email address" name="entry.445616027">
+        </span>
+      </div>
+      <div class="legendary-option options">
+        <h3 onclick="legendarySelect('.legendary-input-box')">
+          legendary <small>(How can we reach you?)</small>
+          <i class="fa fa-plus"></i>
+          <i class="fa fa-minus"></i>
+        </h3>
+        <span class="legendary-input-box select-input-box">
+          <input class="elegant-input" type="text" placeholder="Briefly explain..." name="entry.381673256">
+        </span>
+      </div>
+      <div class="btn-box">
+        <input type="submit"  value="Send">
+      </div>
+    </fieldset>
+  </form>
+</div>
